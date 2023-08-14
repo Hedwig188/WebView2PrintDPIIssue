@@ -35,6 +35,7 @@ namespace WebView2PrintDPIIssue
 		{
 			CoreWebView2PrintSettings printerSettings = webView.CoreWebView2.Environment.CreatePrintSettings();
 			printerSettings.PrinterName = printerName;
+   			printerSettings.PagesPerSide = 2;
 			return printerSettings;
 		}
 	}
